@@ -9,4 +9,4 @@ We will create a tool to identify errors in assembly creation based on short rea
 + Shakaya Assembly (Megahit)
 
 ## Workflow
-
+![Flowchart](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/workflow.jpg)
