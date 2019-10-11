@@ -7,7 +7,7 @@ Our goal is to identify errors in assembly creation based on short reads. Exampl
 ![Flowchart](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/workflow.jpg)
 
 ## Datasets
-+ Zymo Assembly (8 genomes; 3 gram positive, 3 gram negative, 2 yeast)
++ Zymo Assembly (10 genomes; 5 gram positive, 3 gram negative, 2 yeast)
 + Shakaya Assembly (Megahit)
 
 ## Methods
