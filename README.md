@@ -19,7 +19,7 @@ Metagenomic assembly is an important technique to reconstruct organisms by stitc
 ![NCBIpipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/NCBI_pipeline%20(1).png)
 
 ![Random Forest](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/NCBI_hackathon.jpg)
-A random forest classifier will be used to elucidate the type of each assembly error that is detected by the MASQ pipeline. 
+A random forest classifier will be used to classify the type of each assembly error that is detected by the MASQ pipeline. 
 
 Visualization of the detected assembly errors will be carried out through IGV.
 ## Key Results
