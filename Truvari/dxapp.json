@@ -1,0 +1,220 @@
+{
+  "name": "Truvari",
+  "title": "Truvari",
+  "summary": "Structural variant comparison tool for VCFs",
+  "dxapi": "1.0.0",
+  "version": "v1.3.2",
+  "inputSpec": [
+    {
+      "name": "BaseVCF",
+      "label": "BaseVCF.vcf.gz",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*.vcf.gz"
+      ],
+      "help": "Base set of variation in VCF, bgzip'd, tabix'd"
+    },
+    {
+      "name": "BaseVCFIDX",
+      "label": "BaseVCF.vcf.gz.tbi",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*.vcf.gz.tbi"
+      ],
+      "help": "Base set of variation VCF tabix"
+    },
+    {
+      "name": "CompVCF",
+      "label": "CompVCF.vcf.gz",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*.vcf.gz"
+      ],
+      "help": "Comparison set of variation in VCF, bgzip'd, tabix'd"
+    },
+    {
+      "name": "CompVCFIDX",
+      "label": "CompVCF.vcf.gz.tbi",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*.vcf.gz.tbi"
+      ],
+      "help": "Comparison set of variation VCF tabix"
+    },
+    {
+      "name": "Reference",
+      "label": "Reference",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*.fasta"
+      ],
+      "help": "Reference FASTA file over which the VCFs are called"
+    },
+    {
+      "name": "giabreport",
+      "class": "boolean",
+      "optional": true,
+      "help": "Parse output TPs/FNs for GIAB annotations and create a report"
+    },
+    {
+      "name": "REFDIST",
+      "label": "REFDIST",
+      "class": "int",
+      "optional": true,
+      "default": 500,
+      "help": "Max reference location distance"
+    },
+    {
+      "name": "PCTSIM",
+      "label": "PCTSIM",
+      "class": "float",
+      "optional": true,
+      "default": 0.7,
+      "help": "Min percent allele sequence similarity. Set to 0 to ignore."
+    },
+    {
+      "name": "PCTSIZE",
+      "label": "PCTSIZE",
+      "class": "float",
+      "optional": true,
+      "default": 0.7,
+      "help": "Min pct allele size similarity (minvarsize/maxvarsize)"
+    },
+    {
+      "name": "PCTOVL",
+      "label": "PCTOVL",
+      "class": "float",
+      "optional": true,
+      "default": 0.0,
+      "help": "Minimum pct reciprocal overlap"
+    },
+    {
+      "name": "typeignore",
+      "label": "typeignore",
+      "class": "boolean",
+      "optional": true,
+      "default": false,
+      "help": "Variant types don't need to match to compare"
+    },
+    {
+      "name": "gtcomp",
+      "label": "gtcomp",
+      "class": "boolean",
+      "optional": true,
+      "default": false,
+      "help": "Compare GenoTypes of matching calls"
+    },
+    {
+      "name": "bSample",
+      "label": "bSample",
+      "class": "string",
+      "optional": true,
+      "help": "Sample name in Base VCF"
+    },
+    {
+      "name": "cSample",
+      "label": "cSample",
+      "class": "string",
+      "optional": true,
+      "help": "Sample name in Comp VCF"
+    },
+    {
+      "name": "SIZEMIN",
+      "label": "SIZEMIN",
+      "class": "int",
+      "optional": true,
+      "default": 50,
+      "help": "Minimum variant size to consider for comparison"
+    },
+    {
+      "name": "SIZEFILT",
+      "label": "SIZEFILT",
+      "class": "int",
+      "optional": true,
+      "default": 30,
+      "help": "Minimum variant size to load into IntervalTree"
+    },
+    {
+      "name": "sizemax",
+      "label": "sizemax",
+      "class": "int",
+      "optional": true,
+      "default": 50000,
+      "help": "Maximum variant size to consider for comparison"
+    },
+    {
+      "name": "passonly",
+      "label": "passonly",
+      "class": "boolean",
+      "optional": true,
+      "default": false,
+      "help": "Only consider calls with FILTER == PASS"
+    },
+    {
+      "name": "no_ref",
+      "label": "no_ref",
+      "class": "string",
+      "optional": true,
+      "help": "Don't include 0/0 or ./. GT calls from all (a), base (b), or comp (c) vcfs (False)"
+    },
+    {
+      "name": "includebed",
+      "label": "includebed",
+      "class": "file",
+      "optional": true,
+      "patterns": [
+        "*.bed"
+      ],
+      "help": "Bed file of regions in the genome to include only calls overlapping"
+    },
+    {
+      "name": "multimatch",
+      "label": "multimatch",
+      "class": "boolean",
+      "optional": true,
+      "default": false,
+      "help": "Allow base calls to match multiple comparison calls, and vice versa. Output vcfs will have redundant entries."
+    }
+  ],
+  "outputSpec": [
+    {
+      "name": "OutputTar",
+      "label": "OutputTar",
+      "class": "file",
+      "patterns": [
+        "*.tgz"
+      ],
+      "help": "Tar/compressed output directory with call intersections and summaries"
+    }
+  ],
+  "runSpec": {
+    "timeoutPolicy": {
+      "*": {
+        "hours": 24
+      }
+    },
+    "interpreter": "bash",
+    "release": "16.04",
+    "distribution": "Ubuntu",
+    "file": "src/Truvari.sh"
+  },
+  "access": {
+    "network": [
+      "*"
+    ]
+  },
+  "regionalOptions": {
+    "aws:us-east-1": {
+      "systemRequirements": {
+        "*": {
+          "instanceType": "mem1_ssd1_v2_x4"
+        }
+      }
+    }
+  }
+}
