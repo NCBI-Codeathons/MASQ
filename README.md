@@ -22,7 +22,7 @@ downloaded fastq files, ran fastqc to check the quality of the sequencing reads 
 used megahit and metaspades to build assemblies from the zymo and shakya datasets
 
 ### Analysis pipeline
-![NCBIpipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/NCBI_pipeline%20(1).png)
+![NCBIpipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/Updated%20Pipeline.png)
 
 
 ### Machine Learning Model to Classify Assembly Errors
