@@ -29,7 +29,9 @@ This will be updated after project completion.
 ## Discussion 
 
 ### Future Directions
-This will be updated after project completion.
++ Test by running on simulated data
++ Use a more sophisticated classifier model
++ Could combine a detection model with the classifier
 
 ### Reproduction
 #### Docker
