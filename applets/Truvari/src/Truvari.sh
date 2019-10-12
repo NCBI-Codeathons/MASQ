@@ -33,7 +33,7 @@ main() {
     echo "Value of SIZEFILT: '$SIZEFILT'"
     echo "Value of sizemax: '$sizemax'"
     echo "Value of passonly: '$passonly'"
-    echo "Value of no_ref: '${no_ref[@]}'"
+    echo "Value of no_ref: '$no_ref'"
     echo "Value of includebed: '$includebed'"
     echo "Value of multimatch: '$multimatch'"
 
@@ -70,47 +70,47 @@ main() {
     # will be AppInternalError with a generic error message.
     pip install Truvari==v1.3.1
     
-    optionals=""
+    set optionals=""
     if [ "$giabreport" == true ]
     then
-        optionals=$optionals + " --giabreport"
+        optionals="$optionals --giabreport"
     fi
     if [ -n "$includebed" ]
     then
-        optionals=$optionals + " --includebed " + $includebed
+        optionals="$optionals --includebed include.bed"
     fi
     if [ "$typeignore" == true ]
     then
-        optionals=$optionals + " --typeignore"
+        optionals="$optionals --typeignore"
     fi
-    if ["$gtcomp" == true ]
+    if [ "$gtcomp" == true ]
     then
-        optionals=$optionals + " --gtcomp"
+        optionals="$optionals --gtcomp"
     fi
     if [ -n "$bSample" ]
     then
-        optionals=$optionals + " --bSample " + $bSample
+        optionals="$optionals --bSample $bSample"
     fi
     if [ -n "$cSample" ]
     then
-        optionals=$optionals + " --cSample " + $cSample
+        optionals="$optionals --cSample $cSample"
     fi
     if [ "$passonly" == true ]
     then
-        optionals=$optionals + " --passonly"
+        optionals="$optionals --passonly"
     fi
     if [ -n "$no_ref" ]
     then
-        optionals=$optionals + " --no-ref " + $no_ref
+        optionals="$optionals --no-ref $no_ref"
     fi
     if [ "$multimatch" == true ]
     then
-        optionals=$optionals + " --multimatch"
+        optionals="$optionals --multimatch"
     fi
-
-    truvari -b $BaseVCF \
-            -c $CompVCF \
-            -f $Reference \
+    echo "Optional arguments $optionals"
+    truvari -b BaseVCF.vcf.gz \
+            -c CompVCF.vcf.gz \
+            -f Reference.fasta \
             -o truvari_result \
             -r $REFDIST \
             -p $PCTSIM \
@@ -118,19 +118,19 @@ main() {
             -O $PCTOVL \
             -s $SIZEMIN \
             -S $SIZEFILT \
-            --sizemax $SIZEMAX \
+            --sizemax $sizemax \
             $optionals
 
             
     cd truvari_result
-    tar czvf $OutputTar *
+    tar czvf OutputTar.tgz *
     # The following line(s) use the dx command-line tool to upload your file
     # outputs after you have created them on the local file system.  It assumes
     # that you have used the output field name for the filename for each output,
     # but you can change that behavior to suit your needs.  Run "dx upload -h"
     # to see more options to set metadata.
 
-    OutputTar=$(dx upload OutputTar --brief)
+    OutputTar=$(dx upload OutputTar.tgz --brief)
 
     # The following line(s) use the utility dx-jobutil-add-output to format and
     # add output variables to your job's output as appropriate for the output
