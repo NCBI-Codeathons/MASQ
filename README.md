@@ -34,6 +34,9 @@ This will be updated after project completion.
 ### Reproduction
 #### Docker
 
+#### DNA Nexus
+![DNANexuspipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/image.png)
+
 ## Contributors
 + Todd Treangen
 + Michael Jochum
