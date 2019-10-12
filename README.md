@@ -11,7 +11,7 @@ Our goal is to identify errors in assembly creation based on short reads. Exampl
   + Short reads (http://ftp-private.ncbi.nlm.nih.gov/nist-immsa/IMMSA/)
   (https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1299-7#MOESM2)
   + Long reads 
-+ Shakaya Assembly (Megahit)
++ Shakya Assembly (MegaHIT and MetaSPAdes)
 
 ## Methods
 This will be updated as project continues.
