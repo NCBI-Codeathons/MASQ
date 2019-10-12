@@ -1,0 +1,14 @@
+{
+  "stage-0.bam_file": {
+    "$dnanexus_link": "file-FfQX0J093p6GQv0K1ZbZGj6B"
+  },
+  "stage-0.ref_file_index": {
+    "$dnanexus_link": "file-FfQXp2j9zXYFfzpBF6vyXq1P"
+  },
+  "stage-0.bam_file_index": {
+    "$dnanexus_link": "file-FfQX73j93p686b7z8YkXkg09"
+  },
+  "stage-0.ref_file": {
+    "$dnanexus_link": "file-FfQKGzQ97yFXqK32FyGjZzpX"
+  }
+}
