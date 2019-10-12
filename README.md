@@ -1,7 +1,8 @@
 # MASQ
 
 ## Abstract
-Metagenomic assembly is an important technique to reconstruct organisms by stitching together gene sequences. A major concern is that detected structural variants or SNPS could actually be the results of misassembled data instead of actual biological phenomena. Our goal is to identify errors in metagenomic assembly creation based on short and long sequencing reads in the hopes of eliminating some of the uncertainty in metagenomic studies. Examples of errors are: inversions, chimeras (translocation), indels (<50bp), replacements (large substitutions). We are creating a containerized quality control pipeline called MASQ.
+While metagenomic assembly has significantly improved since the early days of the Human Microbiome Project (HMP), it remains confounded by intragenomic and intergenomic repetitive sequences. Individual reads that span microbial strains (either via long read technology or clever techniques for generating synthetic long reads) to fully resolve variation within a given community. Recent benchmarking studies on error rates in metagenomic assembly range between 1 and 10 major SV error per MB of assembled sequenced. Thus major concern is that detected structural variants could actually result from misassembled data instead of actual strain specific variation. This goal of this project is to identify errors in metagenomic assembly based on short and long read mapping, in the hope of eliminating some of the uncertainty and error in metagenomic studies. Examples of errors we are MASQing are: inversions, chimeras (translocation), indels (<50bp), replacements (large substitutions). We are creating a containerized quality control pipeline called MASQ.
+
 
 ## Methods
 ### Datasets
