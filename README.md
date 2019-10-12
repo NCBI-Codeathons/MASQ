@@ -4,7 +4,7 @@
 Our goal is to identify errors in assembly creation based on short reads. Examples of errors are: inversions, chimeras (translocation), indels (<50bp), replacements (large substitutions)
 
 ## Workflow
-![Flowchart](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/workflow.jpg)
+![Flowchart](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/workflow1.jpg)
 
 ## Methods
 ### Datasets
