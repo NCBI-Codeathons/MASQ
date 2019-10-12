@@ -36,6 +36,7 @@ This will be updated after project completion.
 
 ### Reproduction
 #### Docker
+![Docker screenshot](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/docker_ncbi.png)
 
 #### DNA Nexus
 ![DNANexuspipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/image.png)
