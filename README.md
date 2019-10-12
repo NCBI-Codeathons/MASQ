@@ -14,16 +14,18 @@ Our goal is to identify errors in assembly creation based on short reads. Exampl
   + Long reads 
 + Shakya Assembly (MegaHIT and MetaSPAdes)
 
-## Methods
-This will be updated as project continues.
-
 ## Key Results
 This will be updated after project completion.
 
-## Future Directions
+## Discussion 
+
+### Future Directions
 This will be updated after project completion.
 
-### Contributors
+### Reproduction
+#### Docker
+
+## Contributors
 + Todd Treangen
 + Michael Jochum
 + Adam English
