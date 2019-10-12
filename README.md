@@ -3,9 +3,6 @@
 ## Abstract
 Metagenomic assembly is an important technique to reconstruct organisms by stitching together gene sequences. A major concern is that detected structural variants or SNPS could actually be the results of misassembled data instead of actual biological phenomena. Our goal is to identify errors in metagenomic assembly creation based on short and long sequencing reads in the hopes of eliminating some of the uncertainty in metagenomic studies. Examples of errors are: inversions, chimeras (translocation), indels (<50bp), replacements (large substitutions). We are creating a containerized quality control pipeline called MASQ.
 
-## Workflow
-![Flowchart](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/workflow1.jpg)
-
 ## Methods
 ### Datasets
 + Zymobiomics Microbial Community Standards Assemblies (10 genomes; 5 gram positive, 3 gram negative, 2 yeast)
@@ -20,11 +17,11 @@ Metagenomic assembly is an important technique to reconstruct organisms by stitc
 
 ### Analysis pipeline
 ![NCBIpipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/NCBI_pipeline%20(1).png)
-This is the 
 
 ![Random Forest](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/NCBI_hackathon.jpg)
-A random forest classifier will be used to elucidate which kind of assembly errors are detected by the MASQ pipeline. 
+A random forest classifier will be used to elucidate the type of each assembly error that is detected by the MASQ pipeline. 
 
+Visualization of the detected assembly errors will be carried out through IGV.
 ## Key Results
 This will be updated after project completion.
 
