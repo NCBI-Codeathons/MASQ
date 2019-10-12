@@ -16,24 +16,31 @@ While metagenomic assembly has significantly improved since the early days of th
 + Shakya Assembly (using MegaHIT and MetaSPAdes)
   + Short reads
   + Has a known reference
+  
+### Data collection and initial processing
+downloaded fastq files, ran fastqc to check the quality of the sequencing reads -> good to go!
+used megahit and metaspades to build assemblies from the zymo and shakya datasets
 
 ### Analysis pipeline
 ![NCBIpipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/NCBI_pipeline%20(1).png)
 
+
+### Machine Learning Model to Classify Assembly Errors
 ![Random Forest](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/NCBI_hackathon.jpg)
 A random forest classifier will be used to classify the type of each assembly error that is detected by the MASQ pipeline. 
+*briefly explain what a random forest is and how it will be used to extract imp features and make predictions*
 
-Visualization of the detected assembly errors will be carried out through IGV.
 ## Key Results
 This will be updated after project completion.
 
+*Visualization of the detected assembly errors will be carried out through IGV.*
+*insert labeled/captioned figures showing example assembly errors here*
 
 ## Discussion 
-
 ### Future Directions
 + Test by running on simulated data
 + Use a more sophisticated classifier model
-+ Could combine a detection model with the classifier
++ Once imp features are identified, could integrate a detection model alongside the classifier model (?)
 
 ### Reproduction
 #### Docker
