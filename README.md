@@ -9,13 +9,22 @@ Our goal is to identify errors in assembly creation based on short reads. Exampl
 ## Methods
 ### Datasets
 + Zymobiomics Microbial Community Standards Assemblies (10 genomes; 5 gram positive, 3 gram negative, 2 yeast)
-  + Short reads (http://ftp-private.ncbi.nlm.nih.gov/nist-immsa/IMMSA/)
+  + Short reads 
+  (http://ftp-private.ncbi.nlm.nih.gov/nist-immsa/IMMSA/)
   (https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1299-7#MOESM2)
   + Long reads 
-+ Shakya Assembly (MegaHIT and MetaSPAdes)
+  + Has a known reference
++ Shakya Assembly (using MegaHIT and MetaSPAdes)
+  + Short reads
+  + Has a known reference
+
+### Analysis pipeline
+
+
 
 ## Key Results
 This will be updated after project completion.
+
 
 ## Discussion 
 
