@@ -1,7 +1,7 @@
-# Meta_QC
+# MASQ
 
 ## Abstract
-Metagenomic assembly is an important technique to reconstruct organisms from their gene sequences. Our goal is to identify errors in metagenomic assembly creation based on short reads. Examples of errors are: inversions, chimeras (translocation), indels (<50bp), replacements (large substitutions). 
+Metagenomic assembly is an important technique to reconstruct organisms from their gene sequences. Our goal is to identify errors in metagenomic assembly creation based on short reads. Examples of errors are: inversions, chimeras (translocation), indels (<50bp), replacements (large substitutions). We are creating a containerized quality control pipeline called MASQ.
 
 ## Workflow
 ![Flowchart](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/workflow1.jpg)
