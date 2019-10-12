@@ -19,7 +19,7 @@ Our goal is to identify errors in assembly creation based on short reads. Exampl
   + Has a known reference
 
 ### Analysis pipeline
-
+![NCBIpipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/NCBI_pipeline%20(1).png)
 
 
 ## Key Results
