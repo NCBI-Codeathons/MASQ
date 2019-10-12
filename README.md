@@ -39,7 +39,7 @@ This will be updated after project completion.
 ![DNANexuspipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/image.png)
 
 ## Contributors
-+ Todd Treangen
++ Todd Treangen 
 + Michael Jochum
 + Adam English
 + Shakuntala Mitra
