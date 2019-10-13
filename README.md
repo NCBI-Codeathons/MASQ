@@ -74,6 +74,8 @@ Here we can see the corrected assembly mapping of the same locus (previously Unk
 *insert picture once finished running*
 
 ### Method parameters
+[All relevant parameters can be found documented here.](https://github.com/NCBI-Codeathons/MASQ/blob/master/implementation.md)
+
 
 ## Discussion 
 ### Future Directions
