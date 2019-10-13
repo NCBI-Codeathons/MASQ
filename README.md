@@ -1,5 +1,5 @@
 # MASQ
-![masklogo](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/masq_logo.png)
+![masklogo](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/masq_logo.png  =100x100)
 
 ## Slides
 
