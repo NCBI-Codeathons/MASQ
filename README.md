@@ -12,14 +12,17 @@ While metagenomic assembly has significantly improved since the early days of th
 
 ### Datasets
 + Zymobiomics Microbial Community Standards Assemblies (10 genomes; 5 gram positive, 3 gram negative, 2 yeast)
-  + Short reads 
-  (http://ftp-private.ncbi.nlm.nih.gov/nist-immsa/IMMSA/)
-  (https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1299-7#MOESM2)
-  + Long reads 
   + Has a known reference
-+ Shakya Assembly (using MegaHIT and MetaSPAdes)
-  + Short reads
+  + Synthetic bacteria included: 
+  + Contains short reads from [IMMSA dataset](http://ftp-private.ncbi.nlm.nih.gov/nist-immsa/IMMSA/) 
+  + Sequencing depth:
+  + Average read length:
++ Shakya Assembly (assembled using MegaHIT and MetaSPAdes)
   + Has a known reference
+  + Synthetic bacteria included: 
+  + From short reads 
+  + Sequencing depth:
+  + Average read length:
 
 ### Data collection and initial processing
 downloaded fastq files, ran fastqc to check the quality of the sequencing reads -> good to go!
