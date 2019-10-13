@@ -66,10 +66,18 @@ Other options for classification models are SVM (Support Vector Machine) or CNN 
 
 ### Reproduction
 #### Docker
+The MasQ pipeline is freely available for download and use on DockerHub.
 ![Docker screenshot](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/docker_ncbi.png)
 
 #### DNA Nexus
+[How to run workflow in DNA Nexus](https://documentation.dnanexus.com/developer/workflows/building-and-running-workflows)
+
+Once all of the inputs for all of the apps in the workflow have been satisfied (indicated by the black app box showing a green runnable label instead of orange set inputs), you can run the workflow by clicking on the green Start Analysis button in the upper right of the workflow.
+
 ![DNANexuspipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/image.png)
+
+#### Implementation 
+All relevant parameters can be found documented here. *turn this into a hyperlink*
 
 ## Contributors
 + Todd Treangen 
