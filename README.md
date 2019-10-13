@@ -8,7 +8,7 @@ While metagenomic assembly has significantly improved since the early days of th
 *how to run the pipeline*
 
 ## Methods
-![NCBIpipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/Updated%20Pipeline.png)
+![NCBIpipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/NCBI_pipeline (1).png)
 
 ### Datasets
 + Zymobiomics Microbial Community Standards Assemblies (10 genomes; 5 gram positive, 3 gram negative, 2 yeast)
