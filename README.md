@@ -1,5 +1,5 @@
 # MASQ
-![masklogo](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/masq_logo_small.png)
+![masklogo](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/masq_logo.png)
 
 ## Slides
 
@@ -42,13 +42,14 @@ downloaded fastq files, ran fastqc to check the quality of the sequencing reads 
 used megahit and metaspades to build assemblies from long and short reads
 
 ### Assembly
+Megahit and metaspades are used for short-read metagenomic assembly in the pipeline. These are used to assemble the short reads into representative contigs for the given metagenomic sample.
 
-### Classification
 
 ### Correction
+Correction of the metagenomic assemblies is implemented in the varification workflow. Here a interpreter.py script uses a vcf parser to obtain regions structural variation between the assembly and the short reads. Thereafter these structural variations are "fixed" (or reversed) in the assembly. Lastly, in future editions, the number of mapped reads before and after correction will be compared, which should yield further information on the type and impact of that region of missassembly. 
 
 ### Validation
-
+We use Truvari to make calls on vcf obtained from different SV callers.
 ## Key Results
 
 The MasQ pipeline can smoothly and successfully locate assembly errors. Some examples (visualized with IGV) are shown below:
