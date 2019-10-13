@@ -1,0 +1,66 @@
+{
+  "name": "vcf_compress",
+  "title": "VCFCompress",
+  "summary": "Uses vcftools and bgzip to sort/index a VCF",
+  "dxapi": "1.0.0",
+  "version": "0.0.1",
+  "inputSpec": [
+    {
+      "name": "input_vcf",
+      "label": "input_vcf",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    },
+    {
+      "name": "is_manta",
+      "label": "is_manta",
+      "class": "boolean",
+      "default": true,
+      "help": "True if manta input candidatesSV.vcf.gz, False if Sniffles.vcf"
+    }
+  ],
+  "outputSpec": [
+    {
+      "name": "output_vcf",
+      "label": "output_vcf",
+      "class": "file",
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    },
+    {
+      "name": "output_vcf_tbi",
+      "label": "output_vcf_tbi",
+      "class": "file",
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    }
+  ],
+  "runSpec": {
+    "timeoutPolicy": {
+      "*": {
+        "hours": 2
+      }
+    },
+    "interpreter": "bash",
+    "release": "16.04",
+    "distribution": "Ubuntu",
+    "file": "src/vcf_compress.sh"
+  },
+  "regionalOptions": {
+    "azure:westus": {
+      "systemRequirements": {
+        "*": {
+          "instanceType": "azure:mem1_ssd1_x2"
+        }
+      }
+    }
+  }
+}
