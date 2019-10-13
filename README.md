@@ -13,14 +13,16 @@ While metagenomic assembly has significantly improved since the early days of th
 ### Datasets
 + Zymobiomics Microbial Community Standards Assemblies (10 genomes; 5 gram positive, 3 gram negative, 2 yeast)
   + Has a known reference
-  + Synthetic bacteria included: 
+  + Synthetic bacteria included: Bacillus subtilis, Cryptococcus neoformans, Enterococcus faecalis, Escherichia coli, Lactobacillus fermentum, Listeria monocytogenes, Pseudomonas aeruginosa, Saccharomyces cerevisiae, Salmonella enterica, Staphylococcus aureus
   + Illumina pair-ended short reads from [IMMSA dataset](http://ftp-private.ncbi.nlm.nih.gov/nist-immsa/IMMSA/) 
   + Sequencing depth:
   + Average read length:
-  + 
+  + Oxford Nanopore long reads
+  + Sequencing depth: 
+  + Average read length: 
 + Shakya Assembly (assembled using MegaHIT and MetaSPAdes)
   + Has a known reference
-  + Synthetic bacteria included: 
+  + Synthetic bacteria included: Acidobacterium capsulatum, aciduliprofundum boonei, akkermansia muciniphila, archaeoglobus fulgidus, Bacteroides thetaiotaomicron, Bacteroides vulgatus, Bordetella bronchiseptica, Burkholderia xenovorans LB400, Caldicellulosiruptor bescii, Caldicellulosiruptor saccharolyticus, Chlorobium limicola, Chlorobium phaeobacteroides, Chlorobium phaeovibriodes, Chlorobium tepidum, Chloroflexus aurantiacus, Clostridium thermocellum, Deinococcus radiodurans, Desulfovibrio piger, Desulfovibrio vulgaris, Dictyoglomus turgidum, Enterococcus faecalis, Fusobacterium nucleatum, Gemmatimonas aurantiacus, Geobacter sulfurreducens, Haloferax volcanii, Herpetosiphon aurantiacus, Hydrogenobaculum, Ignicoccus hospitalis, Leptothrix cholodnii, Methanocaldococcus jannaschii, Methanococcus maripaludis C5, Methanococcus maripaludis S2, Methanopyrus kandleri, Methanosarcina acetivorans C2A, Nanoarchaeum equitans, Nitrosomonas europaea, Nostoc sp. PCC 7120, Pelodictyon phaeoclatharatiforme, Persephonella marina EX-H1, Porphyromonas gingivalis, Pyrobaculum aerophilum IM2, Pyrobaculum arsenaticum, Pyrobaculum calidifontis, Pyrococcus furiosus, Pyrococcus horikoshii, Rhodopirellula baltica, Ruegeria pomeroyi, Salinispora arenicola, Salinispora tropica, Shewanella baltica OS185, Shewanella baltica OS223, Sulfitobacter sp.EE-36, Sulfitobacter sp.NAS-14.1, Sulfolobus tokodaii, Sulfurihydrogenibium sp.YO3AOP1, Sulfurihydrogenibium yellowstonense, Thermoanaerobacter pseudethanolicus, Thermotoga neapolitana DSM 4359, Thermotoga petrophila RKU-1, Thermotoga sp.RQ2, Thermus thermophilus HB8, Treponema denticola, Zymomonas mobilis
   + From short reads 
   + Sequencing depth:
   + Average read length:
