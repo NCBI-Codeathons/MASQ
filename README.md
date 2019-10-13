@@ -47,7 +47,7 @@ used megahit and metaspades to build assemblies from long and short reads
 The MasQ pipeline can smoothly and successfully locate assembly errors. Some examples (visualized with IGV) are shown below:
 
 Inversion:
-![Inversion Example]()
+![Inversion Example](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/k119_16424_4_303_4_949_inversion.png)
 
 Insertion:
 ![Insertion Example](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/k119_12877_51-222_inse_igv_snapshot.png)
