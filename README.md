@@ -6,6 +6,7 @@ While metagenomic assembly has significantly improved since the early days of th
 
 ## Getting Started
 *how to run the pipeline*
+*add instructions from the work log document once updated*
 
 ## Methods
 ![NCBIpipeline](https://github.com/NCBI-Codeathons/MASQ/blob/master/workflow10.13.png)
