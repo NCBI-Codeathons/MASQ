@@ -43,10 +43,11 @@ used megahit and metaspades to build assemblies from long and short reads
 *how were the assembly errors visualized?*
 
 ## Key Results
-This will be updated after project completion.
 
-*Visualization of the detected assembly errors will be carried out through IGV.*
-*insert labeled/captioned figures showing example assembly errors here*
+The MasQ pipeline detected an insertion (labeled Unk570) in the Zymo long read assembly, which is indicated by the section of very low mapped reads. 
+![Unk570](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/unk570_igv_snapshot.png)
+
+This is an example of an assembly error that MasQ will fix during the correction step. The validation script checks the percentage of mapped reads in the corrected assembly and shows a ______ increase in mapped reads from the original assembly. Thus, MasQ was successful in correcting assembly errors.
 
 ## Discussion 
 ### Future Directions
