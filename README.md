@@ -5,8 +5,11 @@
 While metagenomic assembly has significantly improved since the early days of the Human Microbiome Project (HMP), it remains confounded by intragenomic and intergenomic repetitive sequences. Individual reads that span microbial strains (either via long read technology or clever techniques for generating synthetic long reads) to fully resolve variation within a given community. Recent benchmarking studies on error rates in metagenomic assembly range between 1 and 10 major SV error per MB of assembled sequenced. Thus major concern is that detected structural variants could actually result from misassembled data instead of actual strain specific variation. This goal of this project is to identify errors in metagenomic assembly based on short and long read mapping, in the hope of eliminating some of the uncertainty and error in metagenomic studies. Examples of errors we are MASQing are: inversions, chimeras (translocation), indels (<50bp), replacements (large substitutions). We are creating a containerized quality control pipeline called MASQ.
 
 ## Getting Started
-*how to run the pipeline*
-*add instructions from the work log document once updated*
+MasQ uses Python 3.x. 
+
+Requirements and dependencies for each major step:
+
+[Validation](https://github.com/NCBI-Codeathons/MASQ/blob/master/validation_workflow/README.md)
 
 ## Methods
 ![NCBIpipeline](https://github.com/NCBI-Codeathons/MASQ/blob/master/workflow10.13.png)
@@ -44,7 +47,19 @@ used megahit and metaspades to build assemblies from long and short reads
 
 ## Key Results
 
-The MasQ pipeline detected an insertion (labeled Unk570) in the Zymo long read assembly, which is shown here by the section of very low mapped reads in IGV. 
+The MasQ pipeline can smoothly and successfully locate assembly errors. Some examples (visualized with IGV) are shown below:
+
+Inversion:
+![Inversion Example](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/k119_16424_4_303_4_949_inversion.png)
+
+Insertion:
+![Insertion Example](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/k119_12877_51-222_inse_igv_snapshot.png)
+![Icarus_Ins_Example](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/image%20(1).png)
+
+Deletion:
+![Deletion Example](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/k119_15191_1-1_000_large%20del.png)
+
+The MasQ pipeline detected an insertion (labeled Unk570) in the Zymo long read assembly, which is shown by the section of very low mapped reads in IGV. 
 ![Unk570](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/unk570_igv_snapshot.png)
 
 This is an example of an assembly error that MasQ will fix during the correction step. The validation script checks the percentage of mapped reads in the corrected assembly and shows a ______ increase in mapped reads from the original assembly. Thus, MasQ was successful in correcting assembly errors.
@@ -77,7 +92,7 @@ Once all of the inputs for all of the apps in the workflow have been satisfied (
 ![DNANexuspipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/image.png)
 
 #### Implementation 
-All relevant parameters can be found documented here. *turn this into a hyperlink*
+[All relevant parameters can be found documented here.](https://github.com/NCBI-Codeathons/MASQ/blob/master/implementation.md)
 
 ## Contributors
 + Todd Treangen 
