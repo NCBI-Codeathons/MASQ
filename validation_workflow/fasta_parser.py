@@ -1,14 +1,5 @@
 import sys
 
-"""
-# Import files//Arguments
-contig_file = open(sys.argv[1])
-contig_file_lines = contig_file.readlines()
-contig_interest = str(sys.argv[2])
-start_position = int(sys.argv[3])
-end_position = int(sys.argv[4])
-"""
-
 def make_contig_dict(contig_file_lines):
     # Put all of the contigs in a hash
     contig_dict = {}
@@ -69,23 +60,3 @@ def contig_fixer(contig_dictionary, contig, start_posit, stop_posit, sv_type, co
         #return the updated dictionary
         return contig_dictionary;
 
-
-# The below was used for testing
-"""
-contig_dict = make_contig_dict();
-
-#contig_dict = contig_fixer(contig_dict, 'unk325', 15162, 15184, 'DEL', 'ATATATATATATATATATAT','A')
-
-#unk325 15398   MantaINS:63:0:0:0:0:1   T       TAAAAAATTTTTTATATAA     .       .       END=15398;
-#contig_dict = contig_fixer(contig_dict, 'unk325', 15398, 15398, 'INS', 'T', 'TAAAAAATTTTTTATATAA')
-
-#contig_dict = contig_fixer(contig_dict, 'unk325', 15398, 15398, 'INS', 'T', 'TAAAAAATTTTTTATATAA')
-
-contig_dict = contig_fixer(contig_dict, 'unk325', 15398, 15398, 'INV', 'TTTTCCCC', 'CCCCTTTT')
-
-# Pull out region of interest from the contig
-print (contig_dict[contig_interest][start_position:end_position])
-
-print ( len(contig_dict[contig_interest]))
-
-"""
