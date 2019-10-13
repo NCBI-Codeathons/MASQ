@@ -14,9 +14,10 @@ While metagenomic assembly has significantly improved since the early days of th
 + Zymobiomics Microbial Community Standards Assemblies (10 genomes; 5 gram positive, 3 gram negative, 2 yeast)
   + Has a known reference
   + Synthetic bacteria included: 
-  + Contains short reads from [IMMSA dataset](http://ftp-private.ncbi.nlm.nih.gov/nist-immsa/IMMSA/) 
+  + Illumina pair-ended short reads from [IMMSA dataset](http://ftp-private.ncbi.nlm.nih.gov/nist-immsa/IMMSA/) 
   + Sequencing depth:
   + Average read length:
+  + 
 + Shakya Assembly (assembled using MegaHIT and MetaSPAdes)
   + Has a known reference
   + Synthetic bacteria included: 
