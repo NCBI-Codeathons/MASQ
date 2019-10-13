@@ -31,11 +31,16 @@ While metagenomic assembly has significantly improved since the early days of th
 
 ### Data collection and initial processing
 downloaded fastq files, ran fastqc to check the quality of the sequencing reads -> good to go!
-used megahit and metaspades to build assemblies from the zymo and shakya datasets
+used megahit and metaspades to build assemblies from long and short reads
 
-### Secondary processing
+### Assembly
 
-### Pre-tertiary processing
+### Correction
+
+### Validation
+
+### Visualization
+*how were the assembly errors visualized?*
 
 ## Key Results
 This will be updated after project completion.
