@@ -50,6 +50,7 @@ Correction of the metagenomic assemblies is implemented in the varification work
 
 ### Validation
 We use Truvari to make calls on vcf obtained from different SV callers.
+
 ## Key Results
 
 The MasQ pipeline can smoothly and successfully locate assembly errors. Some examples (visualized with IGV) are shown below:
