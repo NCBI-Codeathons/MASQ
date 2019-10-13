@@ -50,7 +50,7 @@ Inversion:
 ![Inversion Example]()
 
 Insertion:
-![Insertion Example]()
+![Insertion Example](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/k119_12877_51-222_inse_igv_snapshot.png)
 
 Deletion:
 ![Deletion Example](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/igv_snapshot_k119_18959_del.png)
