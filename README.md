@@ -5,8 +5,8 @@
 While metagenomic assembly has significantly improved since the early days of the Human Microbiome Project (HMP), it remains confounded by intragenomic and intergenomic repetitive sequences. Individual reads that span microbial strains (either via long read technology or clever techniques for generating synthetic long reads) to fully resolve variation within a given community. Recent benchmarking studies on error rates in metagenomic assembly range between 1 and 10 major SV error per MB of assembled sequenced. Thus major concern is that detected structural variants could actually result from misassembled data instead of actual strain specific variation. This goal of this project is to identify errors in metagenomic assembly based on short and long read mapping, in the hope of eliminating some of the uncertainty and error in metagenomic studies. Examples of errors we are MASQing are: inversions, chimeras (translocation), indels (<50bp), replacements (large substitutions). We are creating a containerized quality control pipeline called MASQ.
 
 ## Getting Started
-*how to run the pipeline*
-*add instructions from the work log document once updated*
+
+Download requirements from here.
 
 ## Methods
 ![NCBIpipeline](https://github.com/NCBI-Codeathons/MASQ/blob/master/workflow10.13.png)
@@ -77,7 +77,7 @@ Once all of the inputs for all of the apps in the workflow have been satisfied (
 ![DNANexuspipeline](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/image.png)
 
 #### Implementation 
-All relevant parameters can be found documented here. *turn this into a hyperlink*
+[All relevant parameters can be found documented here.](https://github.com/NCBI-Codeathons/MASQ/blob/master/implementation.md)
 
 ## Contributors
 + Todd Treangen 
