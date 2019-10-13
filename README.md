@@ -6,7 +6,10 @@ While metagenomic assembly has significantly improved since the early days of th
 
 ## Getting Started
 MasQ uses Python 3.x. 
-Download requirements from here.
+
+Requirements and dependencies:
+
+[Validation](https://github.com/NCBI-Codeathons/MASQ/blob/master/validation_workflow/README.md)
 
 ## Methods
 ![NCBIpipeline](https://github.com/NCBI-Codeathons/MASQ/blob/master/workflow10.13.png)
