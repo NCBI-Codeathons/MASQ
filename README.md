@@ -47,11 +47,13 @@ used megahit and metaspades to build assemblies from long and short reads
 The MasQ pipeline can smoothly and successfully locate assembly errors. Some examples (visualized with IGV) are shown below:
 
 Inversion:
+![Inversion Example]()
 
 Insertion:
+![Insertion Example]()
 
 Deletion:
-
+![Deletion Example](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/igv_snapshot_k119_18959_del.png)
 
 The MasQ pipeline detected an insertion (labeled Unk570) in the Zymo long read assembly, which is shown by the section of very low mapped reads in IGV. 
 ![Unk570](https://github.com/NCBI-Codeathons/MASQ/blob/master/figures/unk570_igv_snapshot.png)
