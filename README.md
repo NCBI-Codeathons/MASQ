@@ -73,6 +73,8 @@ This is an example of an assembly error that MasQ will fix during the correction
 Here we can see the corrected assembly mapping of the same locus (previously Unk570) visualized with IGV
 *insert picture once finished running*
 
+### Method parameters
+
 ## Discussion 
 ### Future Directions
 + Test by running on simulated data
