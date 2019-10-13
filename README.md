@@ -35,6 +35,8 @@ used megahit and metaspades to build assemblies from long and short reads
 
 ### Assembly
 
+### Classification
+
 ### Correction
 
 ### Validation
@@ -55,9 +57,10 @@ Here we can see the corrected assembly mapping of the same locus (previously Unk
 + Use a machine learning model such as random forest, SVM, or CNN to classify types of assembly errors
 #### Machine Learning Model to Classify Assembly Errors
 ![Random Forest](https://github.com/NCBI-Codeathons/Meta_QC/blob/master/figures/NCBI_hackathon.jpg)
-A random forest classifier will be used to classify the type of each assembly error that is detected by the MASQ pipeline. 
+A random forest classifier could be used to classify the type of each assembly error that is detected by the MASQ pipeline. 
 *briefly explain what a random forest is and how it will be used to extract imp features and make predictions*
 *can use scikit-learn package for Python*
+Other options for classification models are SVM (Support Vector Machine) or CNN (Convolutional Neural Network).
 
 
 ### Reproduction
